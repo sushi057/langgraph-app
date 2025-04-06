@@ -3,6 +3,21 @@
     "@langchain/community": "^0.3.39",
     "@langchain/core": "^0.3.43",
     "@langchain/langgraph": "^0.2.63",
-    "@langchain/openai": "^0.5.4"
+    "@langchain/langgraph-cli": "^0.0.20",
+    "@langchain/langgraph-supervisor": "^0.0.10",
+    "@langchain/openai": "^0.5.4",
+    "dotenv": "^16.4.7"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "npx tsx graph.ts",
+    "dev": "npx @langchain/langgraph-cli dev",
+    "test": "jest --watchAll=false"
   }
 }
